@@ -54,7 +54,7 @@ function App() {
             <Card 
               hoverable
               style={{margin:15}}
-              cover={<img alt="guagua" src={dog} style={{height:300, padding:10}}/>}
+              cover={<img alt="guagua" src={dog} style={{height:300, padding:10,objectFit:'cover'}}/>}
             >
               <Meta title={dogType.toUpperCase()} style={{textAlign:'center'}}/>
             </Card>
