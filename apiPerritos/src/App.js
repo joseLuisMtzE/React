@@ -25,7 +25,11 @@ function App() {
     }
   ]
   function onChange(value) {
-    setDogType(value[0])
+    console.log(typeof(value))
+    if(value[0]){
+      setDogType(value[0])
+    }
+    
   }
 
   const [dogs, setDogs] = useState([])
@@ -46,7 +50,7 @@ function App() {
       <Typography style={{marginLeft:15}}>Quiero ver... <Cascader options={options} onChange={onChange}  /></Typography>
       <Row>
         {dogs.map((dog, index) => (
-          <Col xs={24} md={12} lg={6}key={index}>
+          <Col xs={24} sm={18} md={12} lg={6}key={index}>
             <Card 
               hoverable
               style={{margin:15}}
