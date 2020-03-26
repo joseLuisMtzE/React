@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './serviceWorker.js';
 import './App.css';
 import Formulario from './components/form';
 

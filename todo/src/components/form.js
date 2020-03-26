@@ -53,10 +53,12 @@ function Formulario() {
 
                 </form>
             </div>
-            {list.map(({ task, createAt, isCompleted }, index) => ( //Usar Key XDXDXDxd
-                <Todo key={index} index={index} task={task} createAt={createAt} isCompleted={isCompleted} completed={completed} deleteTodo={deleteTodo} />
+            <div style={{textAlign:'center'}}>
+                {list.map(({ task, createAt, isCompleted }, index) => ( //Usar Key XDXDXDxd
+                    <Todo key={index} index={index} task={task} createAt={createAt} isCompleted={isCompleted} completed={completed} deleteTodo={deleteTodo} />
 
-            ))}
+                ))}
+            </div>
         </div>
     )
 }
